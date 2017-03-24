@@ -14,6 +14,7 @@ import registerForPushNotificationsAsync
   from '../api/registerForPushNotificationsAsync';
 
 export default class RootNavigation extends React.Component {
+
   componentDidMount() {
     this._notificationSubscription = this._registerForPushNotifications();
   }
@@ -46,7 +47,7 @@ export default class RootNavigation extends React.Component {
           <TabNavigationItem
             id="settings"
             renderIcon={isSelected => this._renderIcon('cog', isSelected)}>
-            <StackNavigation initialRoute="settings" />
+            <StackNavigation initialRoute="activity" />
           </TabNavigationItem>
         </TabNavigation>
     );

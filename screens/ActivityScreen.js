@@ -1,33 +1,39 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
-import { ExpoLinksView } from '@expo/samples';
+import {
+  Image,
+  Linking,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 
-export default class LinksScreen extends React.Component {
+import { MonoText } from '../components/StyledText';
+import { Activity } from '../components/Activity';
+
+
+export default class HomeScreen extends React.Component {
   static route = {
     navigationBar: {
-      title: 'Links',
+      visible: false,
     },
   };
 
   render() {
     return (
-      <ScrollView
-        style={styles.container}
-        contentContainerStyle={this.props.route.getContentContainerStyle()}>
+        <View style={styles.container}>
+          <Activity />
+        </View>
+      )}
+  };
 
-        {/* Go ahead and delete ExpoLinksView and replace it with your
-           * content, we just wanted to provide you with some helpful links */
-        }
-        <ExpoLinksView />
-
-      </ScrollView>
-    );
-  }
-}
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    paddingTop: 15,
-  },
+    backgroundColor: '#fff',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
 });

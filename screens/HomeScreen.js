@@ -24,11 +24,22 @@ export default class HomeScreen extends React.Component {
     },
   };
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      user: 'Billy Mayonnaise'
+    }
+
+  }
+
   render() {
     return (
         <View style={styles.container}>
           <View style={styles.headerBar}>
-            <UserName />
+            <UserName
+              user={this.state.user}
+            />
             <TodaysDate />
           </View>
           <View style={styles.piechart}>
