@@ -11,7 +11,7 @@ export class Charities extends React.Component {
     return (
 
       <View>
-      <Text>My Charities:</Text>
+      <Text style={{fontFamily: 'Marker Felt'}}>My Charities:</Text>
         <ScrollView
           automaticallyAdjustContentInsets={false}
           horizontal={true}
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     margin: 5,
     flexDirection: 'row',
     justifyContent: 'center',
-    height: 90,
-    width: 90,
+    height: 60,
+    width: 60,
   }
 });

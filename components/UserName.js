@@ -22,6 +22,8 @@ const styles = StyleSheet.create({
   username: {
     fontSize: 20,
     paddingTop: 10,
-    color: '#fafafa'
+    color: '#fafafa',
+    fontFamily: 'Marker Felt',
+    fontSize: 25,
   }
 });

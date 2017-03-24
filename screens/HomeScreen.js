@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'rgba(100,149,237, 0.2)',
     width: '100%',
-    height: 200,
+    height: 180,
   },
   charities: {
     padding: 20,
@@ -77,12 +77,13 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     backgroundColor: 'rgba(100,149,237, 0.3)',
     width: '100%',
-    height: 170,
+    height: 140,
   },
   feed: {
     backgroundColor: 'rgba(100,149,237, 0.2)',
     width: '100%',
-    height: 600,
+    marginBottom: -1000,
+
   }
 //   developmentModeText: {
 //     marginBottom: 20,
